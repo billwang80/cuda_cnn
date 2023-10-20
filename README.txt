@@ -12,11 +12,6 @@ the earlier Sudoku example).  You would typically use the following commands:
 
     cargo run --release -- cuda input/cnn.csv input/in.csv output/out_cuda.csv
 
-The program outputs the time spent doing "actual work", which is the
-work of converting input matrices to output vectors.  This measurement
-does not include I/O or the overhead of initializing the GPU. As such,
-the time should be lower for the CUDA version than the CPU version.
-
 The repo also includes 2 helper scripts, written in Python:
 
   generate.py generates random CNNs and input matrices, defaulting to
